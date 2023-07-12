@@ -6,7 +6,6 @@ const PokemonInfo = (props) => {
   return (
     <div>
       {
-        // props.pokemonDetails.name &&
         props.pokemonDetails.name ? (
 
 
@@ -57,7 +56,7 @@ const PokemonInfo = (props) => {
         ) : (
           // We have to use another component over here which will have a image coming by DEAFULT
           <div className="placeholder-img" >
-            <img src={pikachuImg} alt="Pikachu" className='img-content' />
+            <img src={pikachuImg} alt="Pikachu" className='img-content--default' />
           </div>
         )
 
