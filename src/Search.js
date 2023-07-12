@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import "./Search.scss";
 import axios from 'axios';
 
@@ -15,12 +14,12 @@ const Search = (props) => {
 
     axios.get(`https://pokeapi.co/api/v2/pokemon/${currentPokemon}`).then(res => {
       console.log("Data: ", res)
-      const dataVAr = {
-        'name': res.data.name,
-        'height': res.data.height,
-        'weight': res.data.weight,
-        types: res.data.types
-      }
+      // const dataVAr = {
+      //   'name': res.data.name,
+      //   'height': res.data.height,
+      //   'weight': res.data.weight,
+      //   types: res.data.types
+      // }
       // console.log("Data Obj: ", dataVAr)
 
       props.setPokemonDetails({
