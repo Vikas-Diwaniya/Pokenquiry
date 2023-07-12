@@ -16,8 +16,8 @@ function App() {
     apiLink.then(res => {
       setPokemon(res.data.results.map(p => p.name))
       // console.log("Pokemon Output: ", pokemon)
-
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
