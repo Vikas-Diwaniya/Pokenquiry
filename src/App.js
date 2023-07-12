@@ -14,7 +14,6 @@ function App() {
 
   useEffect(() => {
     apiLink.then(res => {
-      // console.log(res)
       setPokemon(res.data.results.map(p => p.name))
       // console.log("Pokemon Output: ", pokemon)
 
@@ -30,42 +29,34 @@ function App() {
     weight: ""
   });
 
-  // const searchPok = () => {
-  //   apiLink.then(res => {
-  //     console.log(res.data.name)
-  //     // 'name': res.data.name,
-  //     // 'height': res.data.height,
-  //     // 'weight': res.data.weight
 
-  //   })
-  // }
 
-  const options = [
-    {
-      value: 'green', label: "Green"
-    },
-    {
-      value: 'red', label: "Red"
-    },
-    {
-      value: 'yellow', label: "Yellow"
-    },
-    {
-      value: 'blue', label: "Blue"
-    },
-    {
-      value: 'black', label: "Black"
-    },
-    {
-      value: 'olive', label: "Olive"
-    },
-    {
-      value: 'pink', label: "Pink"
-    },
-    {
-      value: 'grey', label: "Grey"
-    }
-  ]
+  // const options = [
+  //   {
+  //     value: 'green', label: "Green"
+  //   },
+  //   {
+  //     value: 'red', label: "Red"
+  //   },
+  //   {
+  //     value: 'yellow', label: "Yellow"
+  //   },
+  //   {
+  //     value: 'blue', label: "Blue"
+  //   },
+  //   {
+  //     value: 'black', label: "Black"
+  //   },
+  //   {
+  //     value: 'olive', label: "Olive"
+  //   },
+  //   {
+  //     value: 'pink', label: "Pink"
+  //   },
+  //   {
+  //     value: 'grey', label: "Grey"
+  //   }
+  // ]
 
   return (
     <div className="app">
