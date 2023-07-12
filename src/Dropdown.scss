@@ -1,0 +1,62 @@
+@import "./_variables.scss";
+
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+.top-container {
+  background-color: #a0c49d;
+  padding: 2.4rem 0;
+  margin-bottom: 4.8rem;
+}
+
+.dropdown {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2rem;
+  // margin-bottom: 2.4rem;
+}
+.dropdown-container {
+  width: 33%;
+  font-size: 1.8rem;
+  // margin: 0 auto;
+  text-align: left;
+  border: 1px solid $color--grey-dark;
+  position: relative;
+  border-radius: 1.6rem;
+  background-color: #fff;
+}
+
+.dropdown-input {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  // transform: translateY(0.1rem);
+  // transform: translateX(-0.4rem);
+  transform: translate(-0.5rem, 0.1rem);
+  width: 100%;
+  border: 1px solid $color--grey-dark;
+  border-radius: 0.5rem;
+  overflow: auto;
+  max-height: 30rem;
+  background-color: $color--grey-light;
+  z-index: 99;
+}
+.hidden {
+  display: none;
+}
+
+.dropdown-item {
+  padding: 0.5rem;
+  cursor: pointer;
+}

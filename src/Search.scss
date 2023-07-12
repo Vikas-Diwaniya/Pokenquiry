@@ -1,0 +1,16 @@
+@import "./_variables.scss";
+
+.btn {
+  height: 4.2rem;
+  width: 9.6rem;
+  font-weight: 600;
+  background-color: rgb(72, 8, 223);
+  border: none;
+  cursor: pointer;
+  color: beige;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: rgb(143, 105, 234);
+}

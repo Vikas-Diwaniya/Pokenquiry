@@ -1,0 +1,18 @@
+@import "./_variables.scss";
+
+.headline {
+  &--container {
+    margin-bottom: 3.6rem;
+    text-align: center;
+  }
+  &--title {
+    font-size: 4.2rem;
+    color: #de2004;
+    font-family: "Sofia", sans-serif;
+    font-weight: 500;
+    sub {
+      color: #20384b;
+      font-size: 1.6rem;
+    }
+  }
+}
