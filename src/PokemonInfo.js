@@ -57,7 +57,7 @@ const PokemonInfo = (props) => {
         ) : (
           // We have to use another component over here which will have a image coming by DEAFULT
           <div className="placeholder-img" >
-            <img src={pikachuImg} alt="Pikachu Image" className='img-content' />
+            <img src={pikachuImg} alt="Pikachu" className='img-content' />
           </div>
         )
 

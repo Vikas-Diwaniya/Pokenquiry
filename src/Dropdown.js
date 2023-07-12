@@ -11,10 +11,7 @@ const Icon = () => {
 };
 
 const Dropdown = (props) => {
-  const { placeHolder, pokemonList, setSelectedPok, pokemonDetails, setPokemonDetails } = props
-  // const getDisplay = () => {
-  //   return placeHolder;
-  // };
+  const { pokemonList, setSelectedPok, pokemonDetails, setPokemonDetails } = props
 
   const [selectedText, setSelectedText] = useState('Select...');
   const [show, setShow] = useState(false);

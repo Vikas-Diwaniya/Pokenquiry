@@ -63,7 +63,7 @@ function App() {
       <div className="top-container">
 
         <Headline />
-        <Dropdown placeHolder="Select..." pokemonList={pokemon} setSelectedPok={setSelectedPok} pokemonDetails={pokemonDetails} setPokemonDetails={setPokemonDetails} />
+        <Dropdown pokemonList={pokemon} setSelectedPok={setSelectedPok} pokemonDetails={pokemonDetails} setPokemonDetails={setPokemonDetails} />
       </div>
       <Card selectedPok={selectedPok} pokemonDetails={pokemonDetails} />
     </div>
