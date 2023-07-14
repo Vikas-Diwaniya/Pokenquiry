@@ -33,6 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1.2rem;
+    column-gap: 1.6rem;
     margin-bottom: 2.4rem;
   }
   &--label {
@@ -91,5 +92,36 @@
   .img-content--default {
     width: 100%;
     object-fit: contain;
+  }
+}
+
+// MEDIA Queries for only 2 breakpoints
+@media (max-width: 34em) {
+  html {
+    font-size: 56.25%;
+  }
+  .dropdown {
+    flex-direction: column;
+    align-items: center;
+    &-container {
+      width: 50%;
+    }
+  }
+  .pokemon-details {
+    grid-template-columns: 1fr;
+  }
+  .placeholder-img,
+  .pokemon-details {
+    max-width: 72rem;
+  }
+}
+
+@media (max-width: 67em) {
+  .placeholder-img,
+  .pokemon-details {
+    max-width: 72rem;
+  }
+  html {
+    font-size: 56.25%;
   }
 }

@@ -8,17 +8,27 @@ import Card from './Card';
 function App() {
   console.log('App called!')
 
+  const [pokemon, setPokemon] = useState([])    // Used to render the POKEMON list
 
-  const [pokemon, setPokemon] = useState([])
-  const apiLink = axios.get(`https://pokeapi.co/api/v2/pokemon?limit=50`)
+
+  const getAPIdata = () => {
+    axios.get(`https://pokeapi.co/api/v2/pokemon?limit=50`).then(res => {
+      setPokemon(res.data.results.map(p => p.name))
+    })
+  }
 
   useEffect(() => {
-    apiLink.then(res => {
-      setPokemon(res.data.results.map(p => p.name))
-      // console.log("Pokemon Output: ", pokemon)
-    })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    getAPIdata()
   }, [])
+
+  // useEffect(() => {
+  //   const apiLink = axios.get(`https://pokeapi.co/api/v2/pokemon?limit=50`)
+  //   apiLink.then(res => {
+  //     setPokemon(res.data.results.map(p => p.name))
+  //     // console.log("Pokemon Output: ", pokemon)
+  //   })
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
 
 
   const [selectedPok, setSelectedPok] = useState("");
@@ -28,7 +38,6 @@ function App() {
     height: "",
     weight: ""
   });
-
 
 
   // const options = [
@@ -65,9 +74,12 @@ function App() {
         <Headline />
         <Dropdown pokemonList={pokemon} setSelectedPok={setSelectedPok} pokemonDetails={pokemonDetails} setPokemonDetails={setPokemonDetails} />
       </div>
-      <Card selectedPok={selectedPok} pokemonDetails={pokemonDetails} />
+      {/* <Card selectedPok={selectedPok} pokemonDetails={pokemonDetails} /> */}
+      <Card pokemonDetails={pokemonDetails} />
     </div>
   );
 }
 
-export default App
+
+
+export default App;

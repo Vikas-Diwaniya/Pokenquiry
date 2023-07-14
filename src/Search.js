@@ -36,12 +36,6 @@ const Search = (props) => {
 
     })
   }
-  // console.log("After the function ended")
-  // console.log('Pok Details: ', pokemonDetails)
-  // console.log('Pok Details (Name): ', pokemonDetails.name)
-
-  // console.log("Data Obj: ", dataVAr)
-
 
 
   return (
