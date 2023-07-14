@@ -74,7 +74,6 @@ function App() {
         <Headline />
         <Dropdown pokemonList={pokemon} setSelectedPok={setSelectedPok} pokemonDetails={pokemonDetails} setPokemonDetails={setPokemonDetails} />
       </div>
-      {/* <Card selectedPok={selectedPok} pokemonDetails={pokemonDetails} /> */}
       <Card pokemonDetails={pokemonDetails} />
     </div>
   );
