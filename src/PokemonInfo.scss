@@ -96,6 +96,18 @@
 }
 
 // MEDIA Queries for only 2 breakpoints
+
+@media (max-width: 67em) {
+  .placeholder-img,
+  .pokemon-details {
+    max-width: 72rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+// Below 544px
 @media (max-width: 34em) {
   html {
     font-size: 56.25%;
@@ -110,18 +122,9 @@
   .pokemon-details {
     grid-template-columns: 1fr;
   }
-  .placeholder-img,
-  .pokemon-details {
-    max-width: 72rem;
-  }
-}
 
-@media (max-width: 67em) {
   .placeholder-img,
   .pokemon-details {
-    max-width: 72rem;
-  }
-  html {
-    font-size: 56.25%;
+    max-width: 40rem;
   }
 }
